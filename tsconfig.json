@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": ".public/dist/",
+      "outDir": "./public/dist/",
       "experimentalDecorators": true,
       "module": "commonjs", 
       "target": "es6",

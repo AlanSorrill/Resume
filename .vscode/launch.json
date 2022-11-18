@@ -7,14 +7,18 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Launch WebPortal",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\webpack.config.js",
-            "preLaunchTask": "webpack",
+            "console": "internalConsole",
+            // "preLaunchTask": "buildTscMac",
+            "outputCapture": "std",
+            "autoAttachChildProcesses": false,
+            "program": "${workspaceFolder}/src/Server/ServerIndex.ts",
+            "internalConsoleOptions": "openOnSessionStart",
             "outFiles": [
-                "${workspaceFolder}/.public/dist/**/*.js"
+                "${workspaceFolder}/serverDist/**/*.js"
             ]
         }
     ]
