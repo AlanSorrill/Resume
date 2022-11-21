@@ -1,7 +1,9 @@
 import React from 'react'
-import { inchesToPixels } from '../Helpers';
+import { Combine, inchesToPixels } from '../Helpers';
 export interface Paper_Props {
+
     children?: React.ReactNode
+    style?: React.CSSProperties
 }
 export interface Paper_State { }
 export class Paper extends React.Component<Paper_Props, Paper_State>{
@@ -9,9 +11,9 @@ export class Paper extends React.Component<Paper_Props, Paper_State>{
         super(props);
     }
     render() {
-        return <div style={{
+        return <div style={Combine(this.props.style, {
             width: inchesToPixels(8.5),
             height: inchesToPixels(11),
-        }}>{this.props.children}</div>
+        })}>{this.props.children}</div>
     }
 }

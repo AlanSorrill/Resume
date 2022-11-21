@@ -9,8 +9,8 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        { text: 'University of Iowa', icon: './img/IowaLogo.png' },
-                        { text: '2018-2022', icon: './img/FourYears.png' }
+                        { text: 'University of Iowa', icon: './img/IowaLogo.svg' },
+                        { text: '2018-2022', icon: './img/FourYears.svg' }
                     ]
                 }, 
                 bodyContent: {
@@ -30,8 +30,8 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Wheaton North', icon: './img/WheatonNorth.png'},
-                        {text: '2014-2018', icon: './img/FourYears.png'},
+                        {text: 'Wheaton North', icon: './img/WheatonNorth.svg'},
+                        {text: '2014-2018', icon: './img/FourYears.svg'},
                     ]
                 },
                 bodyContent: {
@@ -54,7 +54,7 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'ParallaxID', icon: './img/PXLogo.png'},
+                        {text: 'ParallaxID', icon: './img/PXLogo.svg'},
                         {text: 'July 2017 - Present', icon: 'calendar_month'},
                         {text: 'Lombard, IL', icon: 'location_on'}
                     ]
@@ -69,7 +69,7 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'iDTech', icon: './img/iDTechLogo.png'},
+                        {text: 'iDTech', icon: './img/iDTechLogo.svg'},
                         {text: 'June 2020 - Aug. 2022', icon: 'calendar_month'},
                         {text: 'Zoom', icon: 'location_on'}
                     ]
@@ -84,7 +84,7 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'iDTech', icon: './img/iDTechLogo.png'},
+                        {text: 'iDTech', icon: './img/iDTechLogo.svg'},
                         {text: 'June 2020 - Aug. 2022', icon: 'calendar_month'},
                         {text: 'Zoom', icon: 'location_on'}
                     ]
@@ -99,7 +99,7 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Gear Commerce', icon: './img/GearCommerceLogo.png'},
+                        {text: 'Gear Commerce', icon: './img/GearCommerceLogo.svg'},
                         {text: 'March 2016 - March 2017', icon: 'calendar_month'},
                         {text: 'Wheaton, IL', icon: 'location_on'}
                     ]
@@ -129,7 +129,7 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Tiki Tacos', icon: './img/Tiki.png'},
+                        {text: 'Tiki Tacos', icon: './img/Tiki.svg'},
                         {text: 'April 2021 - July 2022', icon: 'calendar_month'},
                         {text: 'Mahomet, IL', icon: 'location_on'}
                     ]
@@ -140,7 +140,7 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Catlett Dining Hall', icon: './img/IowaLogo.png'},
+                        {text: 'Catlett Dining Hall', icon: './img/IowaLogo.svg'},
                         {text: 'Jan. 2019 - Aug. 2020', icon: 'calendar_month'},
                         {text: 'Iowa City, IA', icon: 'location_on'}
                     ]
@@ -156,11 +156,11 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Java', icon: './img/Java.png'},
-                        {text: 'C/C++', icon: './img/CPP.png'},
-                        {text: 'Swift', icon: './img/Swift.png'},
-                        {text: 'Javascript / Typescript', icon: './img/Typescript.png'},
-                        {text: 'Haskell', icon: './img/Haskell.png'}
+                        {text: 'Java', icon: './img/Java.svg'},
+                        {text: 'C/C++', icon: './img/CPP.svg'},
+                        {text: 'Swift', icon: './img/Swift.svg'},
+                        {text: 'Javascript / Typescript', icon: './img/Typescript.svg'},
+                        {text: 'Haskell', icon: './img/Haskell.svg'}
                     ]
                 }
             },{
@@ -168,12 +168,12 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Node', icon: './img/NodeJs.png'},
-                        {text: 'React', icon: './img/React.png'},
-                        {text: 'JQuery', icon: './img/jQuery.png'},
-                        {text: 'HTML/CSS', icon: './img/HTML.png'},
-                        {text: 'Android', icon: './img/Android.png'},
-                        {text: 'iOS', icon: './img/Apple.png'}
+                        {text: 'Node', icon: './img/NodeJs.svg'},
+                        {text: 'React', icon: './img/React.svg'},
+                        {text: 'JQuery', icon: './img/jQuery.svg'},
+                        {text: 'HTML/CSS', icon: './img/HTML.svg'},
+                        {text: 'Android', icon: './img/Android.svg'},
+                        {text: 'iOS', icon: './img/Apple.svg'}
                     ]
                 }
             },{
@@ -181,9 +181,9 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'SQL', icon: './img/SQL.png'},
-                        {text: 'Mongo', icon: './img/Mongo.png'},
-                        {text: 'Firestore', icon: './img/Firebase.png'},
+                        {text: 'SQL', icon: './img/SQL.svg'},
+                        {text: 'Mongo', icon: './img/Mongo.svg'},
+                        {text: 'Firestore', icon: './img/Firebase.svg'},
                     ]
                 }
             },{
@@ -191,15 +191,15 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Git', icon: './img/Git.png'},
-                        {text: 'Unreal Engine', icon: './img/UnrealEngine.png'},
-                        {text: 'Blender', icon: './img/Blender.png'},
-                        {text: 'Houdini', icon: './img/Houdini.png'},
-                        {text: 'Photoshop', icon: './img/Photoshop.png'},
-                        {text: 'Illustrator', icon: './img/AdobeIllustrator.png'},
-                        {text: 'Indesign', icon: './img/Indesign.png'},
-                        {text: 'XD', icon: './img/XD.png'},
-                        {text: 'After Effects', icon: './img/AfterEffects.png'},
+                        {text: 'Git', icon: './img/Git.svg'},
+                        {text: 'Unreal Engine', icon: './img/UnrealEngine.svg'},
+                        {text: 'Blender', icon: './img/Blender.svg'},
+                        {text: 'Houdini', icon: './img/Houdini.svg'},
+                        {text: 'Photoshop', icon: './img/Photoshop.svg'},
+                        {text: 'Illustrator', icon: './img/AdobeIllustrator.svg'},
+                        {text: 'Indesign', icon: './img/Indesign.svg'},
+                        {text: 'XD', icon: './img/XD.svg'},
+                        {text: 'After Effects', icon: './img/AfterEffects.svg'},
                     ]
                 }
             }, {
