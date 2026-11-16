@@ -79,7 +79,7 @@ export class HR_IconBullet extends React.Component<HR_IconBullet_Props, HR_IconB
         super(props);
     }
     get size(){
-return typeof this.props.size == 'number' ? this.props.size : 18
+        return typeof this.props.size == 'number' ? this.props.size : 18
     }
     render() {
         return <div style={{ color: Colors.darkText, display: 'flex', fontFamily: "'Fira Sans', sans-serif" }}>

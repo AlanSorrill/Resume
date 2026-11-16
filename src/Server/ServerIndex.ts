@@ -6,7 +6,8 @@ const app = express()
 
 const port = 3000
 
-let publicPath = Path.resolve(__dirname, '../public')
+// Node runs this file as an ES module, where __dirname doesn't exist.
+let publicPath = Path.resolve(import.meta.dirname, '../../public')
 
 console.log(`Public path: ${publicPath}`)
 function scanPublicPath(directory: string) {

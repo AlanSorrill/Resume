@@ -3,7 +3,6 @@ import { ImageExtension, MaterialSymbol, PublicFilePath } from "./ClientImports"
 export type ResumeData = {
     education: Section
     workExperience: Section
-    generalWorkExperience: Section
     skills: Section
     extra: Card[]
 }

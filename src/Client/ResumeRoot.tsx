@@ -12,18 +12,27 @@ export class ResumeRoot extends React.Component<ResumeRoot_Props, ResumeRoot_Sta
         super(props);
     }
 
-    mrORder: Array<keyof typeof Resume> = ['education', 'skills', 'workExperience', 'generalWorkExperience', 'extra']
+    mrORder: Array<keyof typeof Resume> = ['education', 'skills', 'workExperience', 'extra']
 
     render() {
         let ths = this;
+        // ?view=human shows only the styled resume, ?view=machine only the plain one; anything else shows both.
+        const view = new URLSearchParams(window.location.search).get('view');
+        const showHuman = view !== 'machine';
+        const showMachine = view !== 'human';
         return <div style={{ fontFamily: "'Fira Sans', sans-serif", fontSize: 13, display: 'flex' }}>
-            <Paper style={{ backgroundColor: Colors.background, flexDirection: 'column', display: 'flex', }} >
+            {showHuman && <Paper style={{ backgroundColor: Colors.background, flexDirection: 'column', display: 'flex', }} >
                 <div style={{ display: 'flex', padding: HR_Padding * 2 }}>
                     <Center direction='horizontal' style={{ width: '25%' }}>
                         <Center direction={'vertical'}><img src="./img/CoffeeAndCode.svg" style={{ height: 35 }} /></Center>
                     </Center>
                     <div style={{ flexGrow: 1 }} />
-                    <img src="./img/NameTag.svg" style={{ height: 73 }} />
+                    <div style={{ backgroundColor: '#333', borderRadius: 2, height: 73, boxSizing: 'border-box', padding: '0 14px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end', textAlign: 'right', color: '#bbbdbf', fontSize: 10, lineHeight: '12px' }}>
+                        <div style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 700, fontSize: 20, lineHeight: '24px', marginBottom: 4 }}>Alan Sorrill</div>
+                        <div>alan.sorrill@gmail.com</div>
+                        <div>Glen Ellyn IL, 60137</div>
+                        <div>1<span style={{ color: '#808184' }}>-(</span>630<span style={{ color: '#808184' }}>)-</span>890<span style={{ color: '#808184' }}>-</span>5640</div>
+                    </div>
                 </div>
                 <div style={{ display: 'flex', paddingLeft: HR_Padding, paddingRight: HR_Padding, flexGrow: 1 }}>
                     <div style={{ flexGrow: 1, width: '25%' }}>
@@ -31,8 +40,6 @@ export class ResumeRoot extends React.Component<ResumeRoot_Props, ResumeRoot_Sta
                     </div>
                     <div style={{ flexGrow: 1, width: '50%' }}>
                         <HR_Section section={Resume.workExperience} />
-                        <div style={{ height: HR_Padding  }} key='spacer' />
-                        <HR_Section section={Resume.generalWorkExperience} />
                     </div>
                     <div style={{ flexGrow: 1, width: '25%', height: '100%', display: 'flex', flexDirection: 'column' }}>
                         <HR_Section key='skills' section={Resume.skills} />
@@ -41,16 +48,16 @@ export class ResumeRoot extends React.Component<ResumeRoot_Props, ResumeRoot_Sta
                         <div style={{ height: HR_Padding  }} key='bottomMargin' />
                     </div>
                 </div>
-            </Paper>
-            <Paper style={{ backgroundColor: '#ebe1c6' }}>
+            </Paper>}
+            {showMachine && <Paper style={{ backgroundColor: '#ebe1c6' }}>
                 {this.mrORder.map((key, index) => {
                     let item = Resume[key]
                     if (Array.isArray(item)) {
                         return item.map((card) => (<MR_Card cardData={card} />))
                     }
                     return <MR_Section section={item} />
-                })} 
-            </Paper> 
+                })}
+            </Paper>}
         </div>
     }
 }
