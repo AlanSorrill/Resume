@@ -1,4 +1,4 @@
-import { Card, Colors, Content, IconBullet, IconComponent, Section,addInbetween } from '../ClientImports'
+import { Card, Colors, Content, IconBullet, IconComponent, Section, addInbetween, isLowNoise } from '../ClientImports'
 import React from 'react'
 
 export const HR_Padding = 6
@@ -34,7 +34,7 @@ export class HR_Card extends React.Component<HR_Card_Props, HR_Card_State>{
     render() {
         return <div style={{ margin: HR_Padding, borderRadius: 4, overflow: 'hidden' }}>
             <div style={{ backgroundColor: Colors.cardHead, padding: HR_Padding }}>
-                <div style={{ textAlign: 'left', color: Colors.accentLight, fontFamily: "'Barlow', sans-serif" }}>{this.props.cardData.title}</div>
+                <div style={{ textAlign: 'left', color: Colors.accentLight, fontFamily: "'Barlow', sans-serif" }}>{addInbetween(this.props.cardData.title.split('\n') as React.ReactNode[], () => (<br />))}</div>
                 <HR_Content content={this.props.cardData.headContent} />
             </div>
             {typeof this.props.cardData.bodyContent == 'undefined' ? <div></div> :
@@ -89,6 +89,6 @@ export class HR_IconBullet extends React.Component<HR_IconBullet_Props, HR_IconB
                 <div>{this.props.bullet.text}</div>
                 <div style={{ flexGrow: 1 }} />
             </div>
-            <IconComponent iconName={this.props.bullet.icon} style={{ fontSize: this.size, paddingLeft: HR_Padding }} size={this.size} /></div>
+            {!isLowNoise && <IconComponent iconName={this.props.bullet.icon} style={{ fontSize: this.size, paddingLeft: HR_Padding }} size={this.size} />}</div>
     }
 }

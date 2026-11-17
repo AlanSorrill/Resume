@@ -9,6 +9,7 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
+                        { text: 'Computer Science', icon: 'computer' },
                         { text: 'University of Iowa', icon: './img/IowaLogo.svg' },
                         { text: '2018-2022', icon: './img/FourYears.svg' }
                     ]
@@ -26,22 +27,10 @@ export const Resume: ResumeData = {
                     ]
                 }
             }, {
-                title: "High School Diploma",
+                title: 'Independent Study',
                 headContent: {
-                    type: 'iconBullet',
-                    items: [
-                        {text: 'Wheaton North', icon: './img/WheatonNorth.svg'},
-                        {text: '2014-2018', icon: './img/FourYears.svg'},
-                    ]
-                },
-                bodyContent: {
-                    type: 'iconBullet',
-                    title: 'Electives',
-                    items: [
-                        {text: 'AP Computer Science', icon: 'memory'},
-                        {text: 'AP Physics', icon: 'sports_handball'},
-                        {text: 'Marching Band x4', icon: 'music_note'}
-                    ]
+                    type: 'paragraph',
+                    item: 'Developed a front-end user experience for medical image classification.'
                 }
             }
         ]
@@ -61,11 +50,11 @@ export const Resume: ResumeData = {
                 },
                 bodyContent: {
                     type: 'paragraph',
-                    item: "I designed and implemented configuration software. \nThis integrated with multiple ERP systems. \nI also hand wrote and optimized several gradient descent algorithms for R&D."
+                    item: "Built configuration software from scratch, integrating it with SAP and an in-house ERP system.\nHand-wrote and optimized several gradient descent algorithms for R&D."
                 }
             },
             {
-                title: 'Full Stack Developer',
+                title: 'Co-Founder & Full Stack Developer',
                 headContent: {
                     type: 'iconBullet',
                     items: [
@@ -76,7 +65,7 @@ export const Resume: ResumeData = {
                 },
                 bodyContent: {
                     type: 'paragraph',
-                    item: "I am the full stack developer for a program involving mobile apps, and a backend which interacts with custom hardware, which is currently patent pending. This project utilizes modern user interfaces and backend development services on the Google Cloud Platform."
+                    item: "Co-founded an identity startup pairing mobile apps with custom hardware; the core design is patented.\nBuilt the mobile apps and the Google Cloud Platform backend.\nPart-time alongside other roles; on hold pending hardware funding."
                 }
             },
             
@@ -92,7 +81,7 @@ export const Resume: ResumeData = {
                 },
                 bodyContent: {
                     type: 'paragraph',
-                    item: "I have instructed more than 60 classes for elementary through high school-age youth on Java programming and modding Minecraft. Classes were instructed via Zoom due to COVID."
+                    item: "Instructed more than 60 classes for elementary through high school-age youth on Java programming and modding Minecraft. Classes were taught via Zoom."
                 }
             },
             {
@@ -107,7 +96,7 @@ export const Resume: ResumeData = {
                 },
                 bodyContent: {
                     type: 'paragraph',
-                    item: "I built a robust 3D UI that pulled data from a REST API for an e-commerce company wishing to provide customers with a virtual reality shopping experience."
+                    item: "Built a VR shopping experience for Samsung Gear VR in Unreal Engine 4 (C++), laying out the UI in a circle around the user and pulling product data from a REST API."
                 }
             }
         ]
@@ -123,8 +112,8 @@ export const Resume: ResumeData = {
                         {text: 'Java', icon: './img/Java.svg'},
                         {text: 'C/C++', icon: './img/CPP.svg'},
                         {text: 'Swift', icon: './img/Swift.svg'},
-                        {text: 'Javascript / Typescript', icon: './img/Typescript.svg'},
-                        {text: 'Haskell', icon: './img/Haskell.svg'}
+                        {text: 'JavaScript / TypeScript', icon: './img/Typescript.svg'},
+                        {text: 'Rust', icon: './img/Ferris.svg'}
                     ]
                 }
             },{
@@ -132,9 +121,10 @@ export const Resume: ResumeData = {
                 headContent: {
                     type: 'iconBullet',
                     items: [
-                        {text: 'Node', icon: './img/NodeJs.svg'},
+                        {text: 'Node.js', icon: './img/NodeJs.svg'},
                         {text: 'React', icon: './img/React.svg'},
-                        {text: 'JQuery', icon: './img/jQuery.svg'},
+                        {text: 'Electron', icon: 'desktop_windows'},
+                        {text: 'jQuery', icon: './img/jQuery.svg'},
                         {text: 'HTML/CSS', icon: './img/HTML.svg'}
                     ]
                 }
@@ -145,7 +135,9 @@ export const Resume: ResumeData = {
                     items: [
                         {text: 'Android', icon: './img/Android.svg'},
                         {text: 'iOS', icon: './img/Apple.svg'},
-                        {text: 'Windows', icon: './img/Windows.svg'}
+                        {text: 'Windows', icon: './img/Windows.svg'},
+                        {text: 'AWS', icon: 'cloud'},
+                        {text: 'Docker', icon: 'inventory_2'}
                     ]
                 }
             },{
@@ -154,7 +146,7 @@ export const Resume: ResumeData = {
                     type: 'iconBullet',
                     items: [
                         {text: 'SQL', icon: './img/SQL.svg'},
-                        {text: 'Mongo', icon: './img/Mongo.svg'},
+                        {text: 'MongoDB', icon: './img/Mongo.svg'},
                         {text: 'Redis', icon: './img/Redis.svg'},
                     ]
                 }
@@ -167,33 +159,31 @@ export const Resume: ResumeData = {
                         {text: 'Unreal Engine', icon: './img/UnrealEngine.svg'},
                         {text: 'Blender', icon: './img/Blender.svg'},
                         {text: 'Houdini', icon: './img/Houdini.svg'},
-                        {text: 'Photoshop', icon: './img/Photoshop.svg'},
-                        {text: 'Illustrator', icon: './img/AdobeIllustrator.svg'},
-                        {text: 'Indesign', icon: './img/Indesign.svg'},
-                        {text: 'XD', icon: './img/XD.svg'},
-                        {text: 'After Effects', icon: './img/AfterEffects.svg'},
                     ]
-                }
-            }, {
-                title: 'Interpersonal Skills',
-                headContent: {
-                    type: 'iconBullet',
-                    items: [
-                        {text: 'Translates Tech Jargon', icon: 'smart_toy'},
-                        {text: 'Takes feedback well', icon: 'quick_phrases'},
-                        {text: 'Calm Under Pressure', icon: 'self_improvement'},
-                        {text: 'Enjoys Group Work', icon: 'groups'},
-                        {text: 'Perfers in-person', icon: 'commute'}]
                 }
             }
         ]
     },
     extra: [
         {
-            title: 'Patents Pending',
+            title: 'Patents Granted',
             headContent: {
                 type: 'paragraph',
-                item: "Systems and Methods for Providing Identity Information\n\n#US-12008854-B2"
+                item: "Systems and Methods for Providing Identity Information\n\n#US-12008854-B2\n#US-12646366-B2"
+            }
+        },
+        {
+            title: 'Projects',
+            headContent: {
+                type: 'iconBullet',
+                items: [
+                    {text: 'BigAffogato', icon: './img/CPP.svg'},
+                    {text: '2026 - Present', icon: 'calendar_month'}
+                ]
+            },
+            bodyContent: {
+                type: 'paragraph',
+                item: "A platform for designing and testing crypto trading bots.\nStreams dense time-series market data for high-speed backtesting and statistical analysis."
             }
         }
     ]
