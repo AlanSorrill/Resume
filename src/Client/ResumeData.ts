@@ -50,7 +50,7 @@ export const Resume: ResumeData = {
                 },
                 bodyContent: {
                     type: 'paragraph',
-                    item: "Built configuration software from scratch, integrating it with SAP and an in-house ERP system.\nHand-wrote and optimized several gradient descent algorithms for R&D."
+                    item: "Built configuration software from scratch, integrating it with multiple ERP systems.\nHand-wrote and optimized several gradient descent algorithms for R&D."
                 }
             },
             {
